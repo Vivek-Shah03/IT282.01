@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission-Portal</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+        input {
+            border-radius: 8px;
+            border-width: 1px;
+        }
+        textarea {
+            border-radius: 8px;
+        }
+        td{
+            text-align: center;
+            padding: 5px;
+        }
+        table{
+            border: solid black 2px;
+            border-collapse: collapse;
+            column-gap: 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Regestration Form</h2>
+      <form>
+        <div>
+          <label for="name"> Name : <input type="text" id="name" /> </label>
+        </div>
+        <br />
+        <div>
+          <label for="gender">
+            Gender : &nbsp;&nbsp;&nbsp;Male<input
+              type="radio"
+              name="gender"
+            /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Female<input
+              type="radio"
+              name="gender"
+            /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Other <input type="radio" name="gender" id="gender" />
+          </label>
+        </div>
+        <br />
+        <div>
+          <label for="dob"> DOB : <input type="date" id="dob" /> </label>
+        </div>
+        <br/>
+        <div>
+            <label for="mail"> Email : <input type="email" id="mail" /> </label>
+          </div>
+          <br />
+        <div>
+          <label for="phone_num">
+            Mobile Number : <input type="tel" id="phone_num"  maxlength="10"
+            required="required"/>
+          </label>
+        </div>
+        <br />
+        <div>
+            <label for="board">
+                Board: <select name="board" id="board">
+                    <option value="GHSEB">GHSEB</option>
+                    <option value="CBSE">CBSE</option>
+                    <option value="ICSC">ICSE</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="address">
+                Address:<br> <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="catagory">
+                Catagory: <input type="radio" name="catagory"> General
+                          <input type="radio" name="catagory"> SC/ST 
+                          <input type="radio" name="catagory"> OBC
+            </label>
+        </div>
+        <br>
+        <table border="1">
+            <th>STANDARD</th>
+            <th>PASSING YEAR</th>
+            <th>MARKSHEET</th>
+            <tr>
+                <td>10</td>
+                <td><input type="month"></td>
+                <td><input type="file" name="10thmarksheet"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td><input type="month"></td>
+                <td><input type="file" name="12thmarksheet"></td>
+            </tr>
+            <tr>
+                <td>GUJCET</td>
+                <td><input type="month"></td>
+                <td><input type="file" name="gujcetmarksheet"></td>
+            </tr>
+        </table>
+        <br>
+        <div>
+          <input type="submit" value="Submit Now" />&nbsp;&nbsp;&nbsp;<input
+            type="reset"
+            value="Reset"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
